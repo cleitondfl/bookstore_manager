@@ -1,6 +1,5 @@
-package entity;
+package com.cleitonlima.bookstoremanager.entity;
 
-import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
