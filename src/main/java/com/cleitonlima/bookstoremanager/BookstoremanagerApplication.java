@@ -1,4 +1,4 @@
-package entity;
+package com.cleitonlima.bookstoremanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
