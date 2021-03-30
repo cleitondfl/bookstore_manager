@@ -2,9 +2,9 @@ package service;
 
 import com.cleitonlima.bookstoremanager.dto.BookDTO;
 import com.cleitonlima.bookstoremanager.entity.Book;
+import com.cleitonlima.bookstoremanager.exception.BookNotFoundException;
 import com.cleitonlima.bookstoremanager.repository.BookRepository;
 import com.cleitonlima.bookstoremanager.service.BookService;
-import com.cleitonlima.bookstoremanager.utils.BookUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -35,5 +35,14 @@ public class BookServiceTest {
         Assertions.assertEquals(expectedFoundBook.getName(), bookDTO.getName());
         Assertions.assertEquals(expectedFoundBook.getIsbn(), bookDTO.getIsbn());
         Assertions.assertEquals(expectedFoundBook.getPublisherName(), bookDTO.getPublisherName(), bookDTO.getPublisherName());
+    }
+
+    @Test
+    void whenGivenUnexistingIdThenNotFindThrowAnException() {
+        var invalid = 10L;
+
+        when(bookRepository.findById(invalidId)).thenReturn(Optional.ofNullable(any(Book.class)));
+
+        assertThrows(BookNotFoundException.class, () -> bookService.findById(invalidId));
     }
 }
