@@ -41,6 +41,5 @@ public class BookDTO {
 
     @Valid
     @NotNull
-    private AuthorDTO authorDTO;
-
+    private AuthorDTO author;
 }

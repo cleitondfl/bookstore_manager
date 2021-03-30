@@ -107,11 +107,31 @@
 			<artifactId>org.jetbrains.annotations</artifactId>
 			<version>1.7.0</version>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId></groupId>
+			<artifactId>bookstoremanager</artifactId>
+			<version></version>
+		</dependency>
+		<dependency>
+			<groupId></groupId>
+			<artifactId>bookstoremanager</artifactId>
+			<version></version>
+		</dependency>
+		<dependency>
+			<groupId></groupId>
+			<artifactId></artifactId>
+			<version></version>
+		</dependency>
+		<dependency>
+			<groupId></groupId>
+			<artifactId>bookstoremanager</artifactId>
+			<version></version>
+		</dependency></dependencies>
 
 	<plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-compiler-plugins</artifactId>
+		<version>version>3.5.1</version>
 		<configuration>
 			<source>${java.version}</source>
 			<target>${java.version}</target>
