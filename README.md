@@ -1,11 +1,12 @@
 Bookstore API Manager
+
 O objetivo do projeto Bookstore API Manager é disponibilizar uma API para cadastro dos livros de uma livraria através de uma API REST.
 
-O projeto foi desenvolvido como base de criação do curso intrdutório sobre Spring Boot, publicado na Udemy em abril de 2020.
+O projeto foi desenvolvido como base de criação do curso introdutório sobre Spring Boot, publicado na Udemy em abril de 2020, pelo professor Rodrigo Peleias.
 
 Durante o projeto, são abordados os seguintes tópicos:
 
-Setup inicial de projeto com o Spring Boot Initialzr.
+Setup inicial de projeto com o Spring Boot Initializer.
 Criação de modelo de dados para o mapeamento de entidades em bancos de dados.
 Desenvolvimento de operações de gerenciamento de livros (Cadastro, leitura por ID e remoção de livros).
 Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
@@ -30,12 +31,9 @@ SDKMan! para o gerenciamento de múltiplcas versões de Java, Maven e Spring Boo
 Intellj IDEA Community Edition ou sua IDE favorita.
 Controle de versão GIT instalado na sua máquina.
 Swagger 2 para a documentação de todos os endpoints desenvolvidos dentro do projeto.
-Conta no GitHub para o armazenamento do seu projeto na nuvem.
+Conta no GitHub para o armazenamento do projeto na nuvem.
 Conta no Heroku para o deploy do projeto na nuvem
 Postman para execução de testes de integração para a validação de ponta a ponta da API.
-Abaixo, segue o link do projeto implantado no Heroku:
+Abaixo, segue o link do projeto implantado no Heroku.
 
-https://bookapi-course.herokuapp.com/swagger-ui.html
-O link da documentação no Heroku, implementada também atraves do Swagger, está no link abaixo:
-
-https://bookapi-course.herokuapp.com/swagger-ui.html
+https://dashboard.heroku.com/apps/bookstore-manager-cdfl
